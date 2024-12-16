@@ -1,6 +1,7 @@
 ---
 collections:
-  - src: git+https://github.com/cloudapps-idey/ansible-simple-collection.git
+  - name: message_collection
+      src: git+https://github.com/cloudapps-idey/ansible-simple-collection.git
   - name: message_collection
     source: git+https://github.com/cloudapps-idey/ansible-simple-collection.git    
     type: git
