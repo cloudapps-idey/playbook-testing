@@ -17,7 +17,7 @@
 
     - name: display collection_list
       ansible.builtin.debug:
-        msg: {{ collection_list }}
+        msg: "{{ collection_list }}"
         
     - name: Use the diplay_message role
       ansible.builtin.include_role:
