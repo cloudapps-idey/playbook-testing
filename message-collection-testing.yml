@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: false
   collections:
-    - message_collection
+    - samplenamespace.message_collection
 
   tasks:
     - name: Use the diplay_message role
