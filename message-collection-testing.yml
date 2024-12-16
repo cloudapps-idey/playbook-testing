@@ -6,6 +6,6 @@
     - samplenamepace.message_collection
 
   tasks:
-  - name: Use the diplay_message role
-    ansible.builtin.include_role:
-      name: display_message
+    - name: Use the diplay_message role
+      ansible.builtin.include_role:
+        name: display_message
