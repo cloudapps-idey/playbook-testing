@@ -18,4 +18,6 @@
         msg: "{{ collection_list }}"
         
     - name: Use the diplay_message role
-      samplenamespace.message_collection.display_message:
+      import_role:
+        name: samplenamespace.message_collection.display_message
+
