@@ -2,6 +2,7 @@
 - name: Make host group for targeted vm dns name
   hosts: localhost
   gather_facts: false
+  become: true
   collections:
     - samplenamespace.message_collection
 
