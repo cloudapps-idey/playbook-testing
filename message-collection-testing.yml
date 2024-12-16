@@ -3,13 +3,9 @@
   hosts: localhost
   gather_facts: false
   collections:
-    - samplenamespace.ansible-simple-collection
+    - samplenamespace.message_collection
 
   tasks:
-    - name: manaul instll of the repo
-      ansible.builtin.shell:
-        cmd: ansible-galaxy install git+https://github.com/cloudapps-idey/ansible-simple-collection.git
-
     - name: list collections
       ansible.builtin.shell:
         cmd: ansible-galaxy collection list
@@ -21,4 +17,4 @@
         
     - name: Use the diplay_message role
       ansible.builtin.include_role:
-        name: ansible-simple-collection.display_message
+        name: display_message
