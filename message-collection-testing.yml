@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: false
   collections:
-    - samplenamespace.message_collection
+    - samplenamespace.message_collection1
 
   tasks:
     - name: manaul instll of the repo
