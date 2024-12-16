@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: false
   collections:
-    - samplenamepace.message_collection
+    - message_collection
 
   tasks:
     - name: Use the diplay_message role
