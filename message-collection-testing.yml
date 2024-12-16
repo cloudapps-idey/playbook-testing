@@ -1,0 +1,11 @@
+---
+- name: Make host group for targeted vm dns name
+  hosts: localhost
+  gather_facts: false
+  collections:
+    - samplenamepace.message_collection
+
+  tasks:
+  - name: Use the diplay_message role
+    ansible.builtin.include_role:
+      name: samplenamespace.message_collection.display_message
