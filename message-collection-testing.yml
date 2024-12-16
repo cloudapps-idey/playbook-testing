@@ -6,6 +6,9 @@
     - samplenamespace.message_collection
 
   tasks:
+    - name: manaul instll of the repo
+      ansible.builtin.shell:
+        cmd: ansible-galaxy install git+https://github.com/cloudapps-idey/ansible-simple-collection.git
     - name: Use the diplay_message role
       ansible.builtin.include_role:
         name: display_message
