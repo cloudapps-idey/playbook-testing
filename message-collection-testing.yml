@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: false
   collections:
-    - samplenamespace.message_collection1
+    - samplenamespace.ansible-simple-collection
 
   tasks:
     - name: manaul instll of the repo
