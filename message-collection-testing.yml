@@ -18,5 +18,4 @@
         msg: "{{ collection_list }}"
         
     - name: Use the diplay_message role
-      ansible.builtin.include_role:
-        name: samplenamespace.message_collection.display_message
+      samplenamespace.message_collection.display_message:
