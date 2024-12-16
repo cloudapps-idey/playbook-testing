@@ -3,6 +3,8 @@
   hosts: localhost
   gather_facts: false
   become: true
+  collections:
+    - samplenamespace.message_collection
   
   tasks:
     - name: manaul instll of the repo
@@ -18,6 +20,6 @@
         msg: "{{ collection_list }}"
         
     - name: Use the diplay_message role
-      import_collection:
-        name: samplenamespace.message_collection
+      ansible.builtin.import_role:
+        name: display_message
 
