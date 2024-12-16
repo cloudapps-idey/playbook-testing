@@ -8,4 +8,4 @@
   tasks:
     - name: Use the diplay_message role
       ansible.builtin.include_role:
-        name: message_collection.display_message
+        name: display_message
