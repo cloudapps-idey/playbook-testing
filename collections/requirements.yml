@@ -1,0 +1,6 @@
+---
+collections:
+  - name: message_collection
+    source: https://github.com/cloudapps-idey/ansible-simple-collection
+    type: git
+    version: main
