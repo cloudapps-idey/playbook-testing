@@ -20,6 +20,6 @@
         msg: "{{ collection_list }}"
         
     - name: Use the diplay_message role
-      ansible.builtin.import_role:
+      ansible.builtin.include_role:
         name: display_message
 
