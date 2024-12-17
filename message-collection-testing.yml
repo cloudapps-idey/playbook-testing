@@ -1,10 +1,10 @@
 ---
-- name: Make host group for targeted vm dns name
+- name: Display messages about host facts
   hosts: localhost
   gather_facts: false
   become: true
   tasks:
     - name: Use the diplay_message role
       ansible.builtin.include_role:
-        name: samplenamespace.message_collection.display_message
+        name: samplenamespace.message_collection.display_package_message
 
