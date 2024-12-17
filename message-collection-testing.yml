@@ -6,20 +6,8 @@
   collections:
     - samplenamespace.message_collection
   
-  tasks:
-    - name: manaul instll of the repo
-      ansible.builtin.shell:
-        cmd: ansible-galaxy collection install git+https://github.com/cloudapps-idey/message_collection.git
-    - name: list collections
-      ansible.builtin.shell:
-        cmd: ansible-galaxy collection list
-      register: collection_list
-
-    - name: display collection_list
-      ansible.builtin.debug:
-        msg: "{{ collection_list }}"
-        
+  tasks:        
     - name: Use the diplay_message role
       ansible.builtin.include_role:
-        name: samplenamespace.message_collection.display_message
+        name: display_message
 
