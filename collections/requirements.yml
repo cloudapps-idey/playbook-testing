@@ -2,5 +2,5 @@
 collections:
   - name: samplenamespace.message_collection
     type: git
-    source: https://github.com/cloudapps-idey/ansible-simple-collection.git
+    source: https://github.com/cloudapps-idey/message_collection.git
   
