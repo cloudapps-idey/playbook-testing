@@ -4,7 +4,7 @@
   gather_facts: false
   become: true
   tasks:
-    - name: Use the diplay_message role
+    - name: Use the diplay_package_message role
       ansible.builtin.include_role:
         name: samplenamespace.message_collection.display_package_message
 
