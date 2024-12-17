@@ -6,7 +6,17 @@
   collections:
     - samplenamespace.message_collection
   
-  tasks:        
+  tasks:  
+    - name: list collections
+      ansible.builtin.shell:
+        cmd: ansible-galaxy collection list
+      register: collection_list
+
+    - name: display collection_list
+      ansible.builtin.debug:
+        msg: "{{ collection_list }}"
+
+        
     - name: Use the diplay_message role
       ansible.builtin.include_role:
         name: display_message
